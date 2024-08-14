@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>Test Page</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" class="standardInput" id="idInstance1" placeholder="idInstance">
+                    <input type="text" class="standardInput" id="apiTokenInstance" placeholder="ApiTokenInstance">
+                    <button class="button" onclick="getSettings()" type="button">getSettings</button>
+                    <button class="button" onclick="getStateInstance()" type="button">getStateInstance</button>
+                </div>
+
+                <div class="input">
+                    <input type="text" id="idInstance2" class="standardInput" name="textbox1" placeholder="idInstance">
+                    <textarea type="text" id="message" class="messageInput" name="textbox2" placeholder="message"></textarea>
+                    <button class="button" type="button">sendMessage</button>
+                </div>
+
+                <script src="scripts/script.js"></script>
+
+                <div class="input">
+                    <input type="text" class="standardInput" name="textbox1" placeholder="idInstance">
+                    <input type="text" class="standardInput" name="textbox2" placeholder="fileUrl">
+                    <button class="button" type="button">sendFileByUrl</button>
+                </div>
+            </div>
+            <div class="response">
+                <h2 class="text">Ответ:</h2>
+                <textarea id="response" class="responseText" readonly></textarea>
+            </div>
+        </div>
+    </body>
+</html>
